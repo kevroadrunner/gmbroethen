@@ -10,7 +10,9 @@
           >
         </div>
         <div class="flex-1 flex flex-col p-4 sm:px-8 space-y-4">
-          <h1 class="text-2xl font-bold">Webseite im Aufbau</h1>
+          <h1 class="text-2xl font-bold">
+            Webseite im Aufbau
+          </h1>
           <p class="text-muted">
             Unsere neue Webseite befindet sich derzeit in Entwicklung.
             Wir arbeiten daran, Ihnen bald ein modernes und übersichtliches
