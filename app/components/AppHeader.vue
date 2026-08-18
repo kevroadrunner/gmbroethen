@@ -44,7 +44,6 @@
           Kontakt
         </UButton>
       </nav>
-      <!--
       <UButton
         variant="outline"
         class="md:hidden"
@@ -54,7 +53,6 @@
           class="size-5"
         />
       </UButton>
-      -->
     </div>
   </header>
 </template>
