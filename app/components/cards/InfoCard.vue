@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { formatDate } from '~/utils'
+
 defineProps<{
   icon: string
   title: string
@@ -43,7 +45,7 @@ defineProps<{
             v-if="item.date"
             class="mt-1 text-xs text-muted"
           >
-            {{ item.date }}
+            {{ formatDate(item.date) }}
           </p>
         </div>
       </div>

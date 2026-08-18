@@ -11,6 +11,7 @@ defineProps<{
   <NuxtLink
     :to="to"
     class="group flex"
+    :target="to.startsWith('http') ? '_blank' : '_self'"
   >
     <UCard
       class="flex flex-1 flex-col transition-transform group-hover:scale-102"
@@ -25,6 +26,11 @@ defineProps<{
       <div>
         <h2 class="text-2xl font-semibold tracking-tight">
           {{ title }}
+          <Icon
+            v-if="to.startsWith('http')"
+            name="lucide:external-link"
+            class="size-4 ml-1"
+          />
         </h2>
         <p class="mt-2 max-w-sm text-sm leading-6 text-muted">
           {{ description }}

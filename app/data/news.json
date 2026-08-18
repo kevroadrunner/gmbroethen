@@ -1,14 +1,30 @@
 [
   {
+    "id": 1,
     "title": "Neue Sitzbank am Dorfplatz",
-    "date": "2026-08-12"
+    "date": "2026-08-12",
+    "excerpt": "Am Dorfplatz wurde eine neue Sitzbank aufgestellt. Sie lädt künftig zum Verweilen und zu einem kleinen Plausch ein.",
+    "image": "https://picsum.photos/700/400"
   },
   {
+    "id": 2,
     "title": "Sommerfest im Dorf",
-    "date": "2026-08-05"
+    "date": "2026-08-05",
+    "excerpt": "Das diesjährige Sommerfest steht vor der Tür. Wir freuen uns auf viele Besucherinnen und Besucher.",
+    "image": "https://picsum.photos/600/400"
   },
   {
+    "id": 3,
+    "title": "Arbeiten am Dorfplatz abgeschlossen",
+    "date": "2026-07-28",
+    "excerpt": "Die geplanten Arbeiten am Dorfplatz konnten erfolgreich abgeschlossen werden.",
+    "image": "https://picsum.photos/800/600"
+  },
+  {
+    "id": 4,
     "title": "Neue Informationen aus der Gemeinde",
-    "date": "2026-07-28"
+    "date": "2026-07-18",
+    "excerpt": "Hier finden Sie aktuelle Informationen und Hinweise aus der Gemeinde.",
+    "image": "https://picsum.photos/400/400"
   }
 ]

@@ -1,4 +1,42 @@
-[{
-  "title": "Leben in Bröthen",
-  "src": "https://picsum.photos/600/400/"
-}]
+[
+  {
+    "id": 1,
+    "title": "Dorfplatz",
+    "image": "https://picsum.photos/900/600"
+  },
+  {
+    "id": 2,
+    "title": "Dorfleben",
+    "image": "https://picsum.photos/600/800"
+  },
+  {
+    "id": 3,
+    "title": "Sommerfest",
+    "image": "https://picsum.photos/900/600"
+  },
+  {
+    "id": 4,
+    "title": "Unsere Umgebung",
+    "image": "https://picsum.photos/600/700"
+  },
+  {
+    "id": 5,
+    "title": "Gemeinschaft",
+    "image": "https://picsum.photos/900/700"
+  },
+  {
+    "id": 6,
+    "title": "Dorfansicht",
+    "image": "https://picsum.photos/700/900"
+  },
+  {
+    "id": 7,
+    "title": "Feierlichkeiten",
+    "image": "https://picsum.photos/900/600"
+  },
+  {
+    "id": 8,
+    "title": "Am Dorfplatz",
+    "image": "https://picsum.photos/600/600"
+  }
+]

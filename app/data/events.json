@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "id": 1,
+    "title": "Sommerfest",
+    "date": "2026-08-24",
+    "time": "15:00",
+    "location": "Dorfplatz",
+    "description": "Gemeinsames Sommerfest mit Essen, Getränken und Unterhaltung."
+  },
+  {
+    "id": 2,
+    "title": "Gemeinderatssitzung",
+    "date": "2026-09-03",
+    "time": "19:00",
+    "location": "Gemeindehaus",
+    "description": "Öffentliche Sitzung des Gemeinderats."
+  },
+  {
+    "id": 3,
+    "title": "Laternenumzug",
+    "date": "2026-11-11",
+    "time": "17:30",
+    "location": "Dorfplatz",
+    "description": "Gemeinsamer Laternenumzug durch das Dorf."
+  }
+]

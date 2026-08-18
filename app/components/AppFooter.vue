@@ -17,8 +17,13 @@
           <nav class="text-sm mt-3 flex flex-col items-start gap-2">
             <ULink to="/aktuelles">Aktuelles</ULink>
             <ULink to="/veranstaltungen">Veranstaltungen</ULink>
-            <ULink href="https://www.feuerwehr-broethen.de/">Freiwillige Feuerwehr</ULink>
-            <ULink to="/galerie">Galerie</ULink>
+            <ULink
+              to="https://www.feuerwehr-broethen.de/"
+              target="_blank"
+            >
+              Freiwillige Feuerwehr
+            </ULink>
+            <ULink to="/gemeinde">Gemeinde</ULink>
           </nav>
         </div>
         <div>

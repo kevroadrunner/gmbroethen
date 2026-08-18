@@ -1,9 +1,9 @@
 <script setup lang="ts">
 defineProps<{
   to: string
-  icon: string
+  icon?: string
+  eyebrow?: string
   image: string
-  eyebrow: string
   title: string
 }>()
 </script>
@@ -23,7 +23,10 @@ defineProps<{
       >
       <div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/10 to-transparent" />
       <div class="absolute inset-x-0 bottom-0 p-7 text-white">
-        <div class="flex items-center gap-2 text-sm text-white">
+        <div
+          v-if="eyebrow && icon"
+          class="flex items-center gap-2 text-sm text-white"
+        >
           <Icon
             :name="icon"
             class="size-4"

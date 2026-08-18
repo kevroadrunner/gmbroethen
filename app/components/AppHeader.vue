@@ -29,6 +29,12 @@
           Veranstaltungen
         </UButton>
         <UButton
+          to="/gemeinde"
+          variant="link"
+        >
+          Gemeinde
+        </UButton>
+        <UButton
           to="/galerie"
           variant="link"
         >
