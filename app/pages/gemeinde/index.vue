@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import meta from '~/data/meta.json'
+import downloads from '~/data/downloads.json'
+import type { FileType } from '~/components/FileDownload.vue'
 </script>
 
 <template>
@@ -142,19 +144,11 @@ import meta from '~/data/meta.json'
           </template>
           <div class="grid gap-3 sm:grid-cols-2">
             <FileDownload
-              file="#"
-              name="Haushalt 2026"
-              type="PDF-Dokument"
-            />
-            <FileDownload
-              file="#"
-              name="Satzung von 2022"
-              type="PDF-Dokument"
-            />
-            <FileDownload
-              file="#"
-              name="Gemeindewappen"
-              type="WEBP-Bild"
+              v-for="download in downloads"
+              :key="download.file"
+              :file="download.file"
+              :name="download.name"
+              :type="download.type as FileType"
             />
           </div>
         </UCard>

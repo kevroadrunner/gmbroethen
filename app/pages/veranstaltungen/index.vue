@@ -22,14 +22,14 @@ const sortedEvents = sortDates(events)
             body: 'flex w-full flex-col gap-6 sm:flex-row sm:items-center'
           }"
         >
-          <Avatar>
+          <CustomAvatar>
             <span class="text-2xl font-semibold leading-none">
               {{ formatDateToDay(event.date) }}
             </span>
             <span class="mt-1 text-xs font-medium tracking-wide">
               {{ formatDateToMonth(event.date) }}
             </span>
-          </Avatar>
+          </CustomAvatar>
           <div class="min-w-0 flex-1">
             <p class="text-sm text-muted">
               {{ formatDate(event.date) }} · {{ event.time }} Uhr

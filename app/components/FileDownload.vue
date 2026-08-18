@@ -1,5 +1,5 @@
 <script setup lang="ts">
-type FileType = 'PDF-Dokument' | 'WEBP-Bild'
+export type FileType = 'PDF-Dokument' | 'WEBP-Bild'
 
 defineProps<{
   file: string
