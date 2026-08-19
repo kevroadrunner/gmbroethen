@@ -11,7 +11,7 @@
   },
   {
     "name": "Gemeindewappen",
-    "file": "#",
-    "type": "WEBP-Bild"
+    "file": "/downloads/broethen.png",
+    "type": "PNG-Bild"
   }
 ]

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-export type FileType = 'PDF-Dokument' | 'WEBP-Bild'
+export type FileType = 'PDF-Dokument' | 'PNG-Bild'
 
 defineProps<{
   file: string
@@ -9,13 +9,14 @@ defineProps<{
 
 const iconMap: Record<FileType, string> = {
   'PDF-Dokument': 'lucide:file-text',
-  'WEBP-Bild': 'lucide:file-image'
+  'PNG-Bild': 'lucide:file-image'
 }
 </script>
 
 <template>
   <a
     :href="file"
+    target="_blank"
     class="flex items-center gap-4 rounded-xl border border-default p-4 transition-transform hover:scale-102"
   >
     <CustomAvatar size="size-10">

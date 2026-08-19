@@ -21,7 +21,7 @@ const mailto = computed(() => {
       description="Frage, Hinweis oder Beschwerde?
         Schreiben Sie direkt an den Bürgermeister."
     />
-    <section class="mx-auto max-w-5xl px-6 pb-20 lg:px-8 lg:pb-28">
+    <PageContent>
       <div class="grid gap-5 lg:grid-cols-[1fr_1.5fr]">
         <UCard>
           <template #header>
@@ -45,7 +45,9 @@ const mailto = computed(() => {
           </p>
           <template #footer>
             <p class="text-sm text-muted">
-              {{ meta.mayor.mail }}
+              <ULink :href="`mailto:${meta.mayor.mail}`">
+                {{ meta.mayor.mail }}
+              </ULink>
             </p>
           </template>
         </UCard>
@@ -100,6 +102,6 @@ const mailto = computed(() => {
           </template>
         </UCard>
       </div>
-    </section>
+    </PageContent>
   </main>
 </template>

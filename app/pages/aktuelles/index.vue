@@ -12,7 +12,7 @@ const sortedNews = sortDates(news, 'DESC')
       title="Aktuelles"
       description="Neuigkeiten und Informationen aus Bröthen."
     />
-    <section class="mx-auto max-w-7xl px-6 pb-20 lg:px-8 lg:pb-28">
+    <PageContent>
       <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-3">
         <UCard
           v-for="item in sortedNews"
@@ -45,6 +45,6 @@ const sortedNews = sortDates(news, 'DESC')
           </div>
         </UCard>
       </div>
-    </section>
+    </PageContent>
   </main>
 </template>

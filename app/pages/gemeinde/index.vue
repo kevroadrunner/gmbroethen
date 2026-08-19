@@ -12,7 +12,7 @@ import type { FileType } from '~/components/FileDownload.vue'
       description="Wissenswertes über Bröthen, unsere Gemeinde und
         die Menschen, die sich für unser Dorf engagieren."
     />
-    <section class="mx-auto max-w-7xl px-6 pb-20 lg:px-8 lg:pb-28">
+    <PageContent>
       <div class="grid gap-5 lg:grid-cols-3">
         <UCard
           class="lg:col-span-2"
@@ -43,6 +43,24 @@ import type { FileType } from '~/components/FileDownload.vue'
               </p>
             </div>
           </div>
+          <template #footer>
+            <div class="flex gap-3">
+              <UButton
+                to="/aktuelles"
+                variant="soft"
+                icon="lucide:newspaper"
+              >
+                Aktuelles anzeigen
+              </UButton>
+              <UButton
+                to="/galerie"
+                variant="soft"
+                icon="lucide:images"
+              >
+                Galerie entdecken
+              </UButton>
+            </div>
+          </template>
         </UCard>
         <UCard>
           <template #header>
@@ -125,7 +143,9 @@ import type { FileType } from '~/components/FileDownload.vue'
                 E-Mail
               </dt>
               <dd class="mt-1 font-medium">
-                {{ meta.mayor.mail }}
+                <ULink :href="`mailto:${meta.mayor.mail}`">
+                  {{ meta.mayor.mail }}
+                </ULink>
               </dd>
             </div>
           </dl>
@@ -153,6 +173,6 @@ import type { FileType } from '~/components/FileDownload.vue'
           </div>
         </UCard>
       </div>
-    </section>
+    </PageContent>
   </main>
 </template>

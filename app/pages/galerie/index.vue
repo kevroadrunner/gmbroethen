@@ -9,7 +9,7 @@ import gallery from '~/data/gallery.json'
       title="Galerie"
       description="Bilder aus dem Dorfleben."
     />
-    <section class="mx-auto max-w-7xl px-6 lg:px-8 pb-20 lg:pb-28">
+    <PageContent>
       <div class="columns-1 sm:columns-2 lg:columns-3 gap-5">
         <figure
           v-for="image in gallery"
@@ -26,6 +26,6 @@ import gallery from '~/data/gallery.json'
           </figcaption>
         </figure>
       </div>
-    </section>
+    </PageContent>
   </main>
 </template>

@@ -12,7 +12,7 @@ const sortedEvents = sortDates(events)
       title="Veranstaltungen"
       description="Was ist los in Bröthen?"
     />
-    <section class="mx-auto max-w-5xl px-6 pb-20 lg:px-8 lg:pb-28">
+    <PageContent variant="centered">
       <div class="space-y-5">
         <UCard
           v-for="event in sortedEvents"
@@ -50,6 +50,6 @@ const sortedEvents = sortDates(events)
           </div>
         </UCard>
       </div>
-    </section>
+    </PageContent>
   </main>
 </template>
