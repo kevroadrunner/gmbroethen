@@ -13,7 +13,7 @@ withDefaults(
 </script>
 
 <template>
-  <section class="mx-auto max-w-7xl px-6 pb-12 pt-16 lg:px-8 lg:pb-16 lg:pt-24">
+  <section class="mx-auto max-w-7xl px-6 lg:px-8 pb-12 lg:pb-16 pt-8 lg:pt-16">
     <div class="max-w-3xl">
       <p class="text-sm font-medium tracking-wide text-primary">
         {{ eyebrow }}
@@ -29,7 +29,7 @@ withDefaults(
         {{ title }}
       </h1>
       <p
-        :v-if="description"
+        v-if="description"
         class="mt-5 text-lg leading-8 text-muted"
       >
         {{ description }}
