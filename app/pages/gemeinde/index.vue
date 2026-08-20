@@ -50,7 +50,7 @@ import type { FileType } from '~/components/FileDownload.vue'
                 variant="soft"
                 icon="lucide:newspaper"
               >
-                Aktuelles anzeigen
+                Neuigkeiten anzeigen
               </UButton>
               <UButton
                 to="/galerie"
@@ -167,6 +167,7 @@ import type { FileType } from '~/components/FileDownload.vue'
               v-for="download in downloads"
               :key="download.file"
               :file="download.file"
+              :label="download.label"
               :name="download.name"
               :type="download.type as FileType"
             />

@@ -1,15 +1,17 @@
 <script setup lang="ts">
-export type FileType = 'PDF-Dokument' | 'PNG-Bild'
+export type FileType = 'PDF-Dokument' | 'PNG-Bild' | 'JPG-Bild'
 
 defineProps<{
-  file: string
   name: string
+  label: string
+  file: string
   type: FileType
 }>()
 
 const iconMap: Record<FileType, string> = {
   'PDF-Dokument': 'lucide:file-text',
-  'PNG-Bild': 'lucide:file-image'
+  'PNG-Bild': 'lucide:file-image',
+  'JPG-Bild': 'lucide:file-image'
 }
 </script>
 
@@ -18,6 +20,7 @@ const iconMap: Record<FileType, string> = {
     :href="file"
     target="_blank"
     class="flex items-center gap-4 rounded-xl border border-default p-4 transition-transform hover:scale-102"
+    :download="name"
   >
     <CustomAvatar size="size-10">
       <Icon
@@ -27,7 +30,7 @@ const iconMap: Record<FileType, string> = {
     </CustomAvatar>
     <div class="min-w-0">
       <p class="font-medium">
-        {{ name }}
+        {{ label }}
       </p>
       <p class="text-sm text-muted">
         {{ type }}

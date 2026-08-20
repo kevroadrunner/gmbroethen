@@ -1,17 +1,26 @@
 [
   {
-    "name": "Haushalt 2026",
-    "file": "#",
+    "label": "Haushalt 2026",
+    "name": "haushalt_2026",
+    "file": "/downloads/2026/haushalt.pdf",
     "type": "PDF-Dokument"
   },
   {
-    "name": "Satzung von 2022",
-    "file": "#",
+    "label": "Satzung von 2022",
+    "name": "satzung_2022",
+    "file": "/downloads/2022/satzung.pdf",
     "type": "PDF-Dokument"
   },
   {
-    "name": "Gemeindewappen",
+    "label": "Gemeindewappen",
+    "name": "wappen_broethen",
     "file": "/downloads/broethen.png",
     "type": "PNG-Bild"
+  },
+  {
+    "label": "Gemeindewappen",
+    "name": "wappen_broethen",
+    "file": "/downloads/broethen.jpg",
+    "type": "JPG-Bild"
   }
 ]

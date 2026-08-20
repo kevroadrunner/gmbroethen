@@ -21,7 +21,7 @@ const mailto = computed(() => {
       description="Frage, Hinweis oder Beschwerde?
         Schreiben Sie direkt an den Bürgermeister."
     />
-    <PageContent>
+    <PageContent variant="centered">
       <div class="grid gap-5 lg:grid-cols-[1fr_1.5fr]">
         <UCard>
           <template #header>
@@ -37,9 +37,9 @@ const mailto = computed(() => {
               </div>
             </div>
           </template>
-          <p class="mt-2 text-muted">
+          <h3 class="text-xl font-semibold">
             {{ meta.mayor.name }}
-          </p>
+          </h3>
           <p class="mt-1 text-sm text-muted">
             Bürgermeister der Gemeinde Bröthen
           </p>
